@@ -1,0 +1,49 @@
+
+
+body{
+    background-color: rgb(235, 238, 233);
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.navbar-toggler{
+    border-radius: 25px;
+    background-color: rgb(180, 223, 169);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 100, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+
+  .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10%; /* validation */
+    border-style: solid;  /* validation */
+}
+
+.card{
+    margin-bottom: 2%;
+    flex: 0 1 calc(33.333% - 20px)
+}   
+
+.container-cards h2{
+    text-align:justify;
+}
+@media only screen and (max-width: 600px) {
+    .container-cards {
+        margin-top: 2%;
+        align-items: center;
+        background-color: blue; /* validation */
+    }
+    .card{
+        flex: 0 1 calc(100% - 20px);
+        }   
+}
+
